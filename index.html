@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image File Types - Simple 1 column template</title>
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(78, 78, 78);
+            background-color: rgb(239, 240, 233);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #526380;
+        }
+
+        ul, ol, dl{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+#wrapper{
+background-color: rgb(255, 255, 255);
+max-width: 1320px;
+margin: 0 auto;
+}
+header, nav, main, footer{
+    padding: 1em;
+    /* outline: 1px solid red; */
+}
+a{
+   margin-right: 1em; 
+}
+
+nav, footer{
+    background-color: rgb(223,228,237);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    border: 2px solid rgba(0,0,0,0.1);
+    padding: 1em;
+    margin-bottom: 3em;
+    border-radius: 5px;
+}
+
+.blue{
+    background-color: #eeeeff;
+}
+
+.svg-image1{
+    width:700px;
+    height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+<header>
+    <h1>A 2nd example</h1>
+</header>
+    <nav>
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+    </nav>
+    <main>
+        <article>
+            <section>
+                <h2>This image is a .jpg (JPEG) file</h2>
+                        <ul>
+                            <li>Better for photographic type images(continuous tone)</li>
+                            <li>Millions of colors(16.7 million)</li>
+                            <li>Lossy compression(throws out information to reduce file size)</li>
+                            <li>No transparency</li>
+                            <li>No animation</li>
+                            <li>Has a newer version(jpeg 2000)</li>
+                            <li>Reduce file size by increasing compression(which reduces quality)</li>
+                        </ul>
+                        <img src="img/saturn-67671_1920_make_jpeg_700x525.jpg" alt="Saturn">
+            </section>
+            <section>
+                <h2>This image is a .gif (GIFF) file</h2>          
+                <ul>
+                    <li>Better for images with large areas of flat color like graphics, logos, etc.</li>
+                    <li>Lossless compression(although adobe now has lossy gifs)</li>
+                    <li>256 colors or less</li>
+                    <li>Allows animation</li>
+                    <li>Allows 1 bit transparency(each pixel is either completely transparent or opaque)</li>
+                    <li>Reduce file size by reducing the number of colors</li>
+                </ul>
+                <img src="img/planet-4258638_1280_make_gif_700x698.gif" alt="Saturn">
+            </section>
+            <section>
+                <h2>This image is a .png (PNG) file</h2>
+                <ul>
+                    <li>2 versions(8bit and 24 bit)</li>
+                    <li>PNG preserves full transparency in grayscale and RGB images using alpha channels, but may
+                        result in larger files than jpg (using PNG-24) </li>
+                    <li>Poorer browser support in older browsers like IE6(Transparency in PNG 24 files will not
+                        work)</li>
+                    <li>PNG format supports RGB, indexed-color, grayscale, and Bitmap-mode images without alpha
+                        channels</li>
+                </ul>
+                <img src="img/icon-1294845_1280_make_png_700x503.png" alt="Saturn">
+            </section>
+            <section>
+                <h2>This image is a .webp (WEBP) file</h2>
+                <ul>
+                    <li>A newer image format that provides superior lossless and lossy compression</li>
+                    <li>WebP lossless images are 26% smaller in size compared to PNGs. WebP lossy images are 25-34%
+                        smaller than comparable JPEG images at equivalent quality.</li>
+                    <li>Supports transparency</li>
+                    <li>Uses compression technology derived form the VP8 video codec( from Google)</li>
+                </ul>
+                <img src="img/saturn-1078095_1280_make_webp_700x500.webp" alt="Saturn">
+            </section>
+            <section class="blue">
+                <h2>This image is an SVG file</h2>
+                        <ul>
+                            <li>Stands for Scalable Vector Graphics</li>
+                            <li>Not based on pixels, but descriptions of shapes, colors, etc.</li>
+                            <li>May have once been promoted as an alternative to Flash based images</li>
+                            <li>Small file size</li>
+                            <li>Scales without degradation, since it is vector based(resolution independant)</li>
+                            <li>Looks good on high res displays</li>
+                            <li>Does not work in IE 8 and down or Android 2.3 and down</li>
+                            <li>Can be used for backgrounds</li>
+                            <li>Can be directly embedded like Data URIs</li>
+                            <li>Can be modified by CSS, since is like XML</li>
+                            <li>Has filters that can be applied</li>
+                            <li><a href="https://css-tricks.com/using-svg/" target="_blank">More info on SVG images at CSS-Tricks</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics" target="_blank">More info on SVG images at Wikipedia</a></li>
+                            <li>The example image below is 477KB</li>
+                          </ul>           
+                          <img class="svg-image1" src="img/saturn.svg" alt="Saturn">       
+            </section>
+        </article>
+    </main>
+   <footer><a href="https://www.w3.org">Go to the W3C</a></footer>
+</div>
+</body>
+</html>
